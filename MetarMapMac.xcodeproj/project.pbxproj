@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEBE00CA2C5B276A002B091B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00C92C5B276A002B091B /* AppDelegate.swift */; };
+		CEBE00CC2C5B276A002B091B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00CB2C5B276A002B091B /* ViewController.swift */; };
+		CEBE00CE2C5B276B002B091B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBE00CD2C5B276B002B091B /* Assets.xcassets */; };
+		CEBE00D12C5B276B002B091B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEBE00D02C5B276B002B091B /* Base */; };
+		CEBE00DC2C5B276B002B091B /* MetarMapMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00DB2C5B276B002B091B /* MetarMapMacTests.swift */; };
+		CEBE00E62C5B276B002B091B /* MetarMapMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00E52C5B276B002B091B /* MetarMapMacUITests.swift */; };
+		CEBE00E82C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00E72C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBE00D82C5B276B002B091B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBE00BE2C5B276A002B091B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBE00C52C5B276A002B091B;
+			remoteInfo = MetarMapMac;
+		};
+		CEBE00E22C5B276B002B091B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBE00BE2C5B276A002B091B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBE00C52C5B276A002B091B;
+			remoteInfo = MetarMapMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEBE00C62C5B276A002B091B /* MetarMapMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetarMapMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBE00C92C5B276A002B091B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBE00CB2C5B276A002B091B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBE00CD2C5B276B002B091B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBE00D02C5B276B002B091B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEBE00D22C5B276B002B091B /* MetarMapMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetarMapMac.entitlements; sourceTree = "<group>"; };
+		CEBE00D72C5B276B002B091B /* MetarMapMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetarMapMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBE00DB2C5B276B002B091B /* MetarMapMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarMapMacTests.swift; sourceTree = "<group>"; };
+		CEBE00E12C5B276B002B091B /* MetarMapMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetarMapMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBE00E52C5B276B002B091B /* MetarMapMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarMapMacUITests.swift; sourceTree = "<group>"; };
+		CEBE00E72C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarMapMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEBE00C32C5B276A002B091B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00D42C5B276B002B091B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00DE2C5B276B002B091B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEBE00BD2C5B276A002B091B = {
+			isa = PBXGroup;
+			children = (
+				CEBE00C82C5B276A002B091B /* MetarMapMac */,
+				CEBE00DA2C5B276B002B091B /* MetarMapMacTests */,
+				CEBE00E42C5B276B002B091B /* MetarMapMacUITests */,
+				CEBE00C72C5B276A002B091B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEBE00C72C5B276A002B091B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE00C62C5B276A002B091B /* MetarMapMac.app */,
+				CEBE00D72C5B276B002B091B /* MetarMapMacTests.xctest */,
+				CEBE00E12C5B276B002B091B /* MetarMapMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBE00C82C5B276A002B091B /* MetarMapMac */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE00C92C5B276A002B091B /* AppDelegate.swift */,
+				CEBE00CB2C5B276A002B091B /* ViewController.swift */,
+				CEBE00CD2C5B276B002B091B /* Assets.xcassets */,
+				CEBE00CF2C5B276B002B091B /* Main.storyboard */,
+				CEBE00D22C5B276B002B091B /* MetarMapMac.entitlements */,
+			);
+			path = MetarMapMac;
+			sourceTree = "<group>";
+		};
+		CEBE00DA2C5B276B002B091B /* MetarMapMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE00DB2C5B276B002B091B /* MetarMapMacTests.swift */,
+			);
+			path = MetarMapMacTests;
+			sourceTree = "<group>";
+		};
+		CEBE00E42C5B276B002B091B /* MetarMapMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE00E52C5B276B002B091B /* MetarMapMacUITests.swift */,
+				CEBE00E72C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift */,
+			);
+			path = MetarMapMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEBE00C52C5B276A002B091B /* MetarMapMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBE00EB2C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMac" */;
+			buildPhases = (
+				CEBE00C22C5B276A002B091B /* Sources */,
+				CEBE00C32C5B276A002B091B /* Frameworks */,
+				CEBE00C42C5B276A002B091B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetarMapMac;
+			productName = MetarMapMac;
+			productReference = CEBE00C62C5B276A002B091B /* MetarMapMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEBE00D62C5B276B002B091B /* MetarMapMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBE00EE2C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMacTests" */;
+			buildPhases = (
+				CEBE00D32C5B276B002B091B /* Sources */,
+				CEBE00D42C5B276B002B091B /* Frameworks */,
+				CEBE00D52C5B276B002B091B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBE00D92C5B276B002B091B /* PBXTargetDependency */,
+			);
+			name = MetarMapMacTests;
+			productName = MetarMapMacTests;
+			productReference = CEBE00D72C5B276B002B091B /* MetarMapMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEBE00E02C5B276B002B091B /* MetarMapMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBE00F12C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMacUITests" */;
+			buildPhases = (
+				CEBE00DD2C5B276B002B091B /* Sources */,
+				CEBE00DE2C5B276B002B091B /* Frameworks */,
+				CEBE00DF2C5B276B002B091B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBE00E32C5B276B002B091B /* PBXTargetDependency */,
+			);
+			name = MetarMapMacUITests;
+			productName = MetarMapMacUITests;
+			productReference = CEBE00E12C5B276B002B091B /* MetarMapMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEBE00BE2C5B276A002B091B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CEBE00C52C5B276A002B091B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CEBE00D62C5B276B002B091B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEBE00C52C5B276A002B091B;
+					};
+					CEBE00E02C5B276B002B091B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEBE00C52C5B276A002B091B;
+					};
+				};
+			};
+			buildConfigurationList = CEBE00C12C5B276A002B091B /* Build configuration list for PBXProject "MetarMapMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEBE00BD2C5B276A002B091B;
+			productRefGroup = CEBE00C72C5B276A002B091B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEBE00C52C5B276A002B091B /* MetarMapMac */,
+				CEBE00D62C5B276B002B091B /* MetarMapMacTests */,
+				CEBE00E02C5B276B002B091B /* MetarMapMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEBE00C42C5B276A002B091B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE00CE2C5B276B002B091B /* Assets.xcassets in Resources */,
+				CEBE00D12C5B276B002B091B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00D52C5B276B002B091B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00DF2C5B276B002B091B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEBE00C22C5B276A002B091B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE00CC2C5B276A002B091B /* ViewController.swift in Sources */,
+				CEBE00CA2C5B276A002B091B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00D32C5B276B002B091B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE00DC2C5B276B002B091B /* MetarMapMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBE00DD2C5B276B002B091B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBE00E62C5B276B002B091B /* MetarMapMacUITests.swift in Sources */,
+				CEBE00E82C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEBE00D92C5B276B002B091B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBE00C52C5B276A002B091B /* MetarMapMac */;
+			targetProxy = CEBE00D82C5B276B002B091B /* PBXContainerItemProxy */;
+		};
+		CEBE00E32C5B276B002B091B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBE00C52C5B276A002B091B /* MetarMapMac */;
+			targetProxy = CEBE00E22C5B276B002B091B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEBE00CF2C5B276B002B091B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBE00D02C5B276B002B091B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEBE00E92C5B276B002B091B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEBE00EA2C5B276B002B091B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CEBE00EC2C5B276B002B091B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetarMapMac/MetarMapMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEBE00ED2C5B276B002B091B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetarMapMac/MetarMapMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CEBE00EF2C5B276B002B091B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetarMapMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetarMapMac";
+			};
+			name = Debug;
+		};
+		CEBE00F02C5B276B002B091B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetarMapMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetarMapMac";
+			};
+			name = Release;
+		};
+		CEBE00F22C5B276B002B091B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MetarMapMac;
+			};
+			name = Debug;
+		};
+		CEBE00F32C5B276B002B091B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD8UZ6484B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.georgebauer.MetarMapMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MetarMapMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEBE00C12C5B276A002B091B /* Build configuration list for PBXProject "MetarMapMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBE00E92C5B276B002B091B /* Debug */,
+				CEBE00EA2C5B276B002B091B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBE00EB2C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBE00EC2C5B276B002B091B /* Debug */,
+				CEBE00ED2C5B276B002B091B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBE00EE2C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBE00EF2C5B276B002B091B /* Debug */,
+				CEBE00F02C5B276B002B091B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBE00F12C5B276B002B091B /* Build configuration list for PBXNativeTarget "MetarMapMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBE00F22C5B276B002B091B /* Debug */,
+				CEBE00F32C5B276B002B091B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEBE00BE2C5B276A002B091B /* Project object */;
+}
