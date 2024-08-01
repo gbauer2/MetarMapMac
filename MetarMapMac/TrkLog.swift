@@ -22,10 +22,10 @@ public struct TrkLog {
 //    public var garmSoftVer  = ""                // Garmin Software Version
     public var numTrkPoints = 0                 // Number of Trackpoints read
     public var trkPoints    = [TrkPoint]()      // Array to store Trackpoints 1-nTrkPoints
-    public var lonLftTrk    = 0.0               // Lat/Lon Limits
-    public var latTopTrk    = 0.0
-    public var latBotTrk    = 0.0
-    public var lonRgtTrk    = 0.0
+    public var lonLftTrk    = -120.0               // Lat/Lon Limits
+    public var latTopTrk    = 55.0
+    public var latBotTrk    = 22.0
+    public var lonRgtTrk    = -70.0
     public var maxAlt       = 0
     
     init() { }

@@ -711,14 +711,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="743" height="505"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <mapView fixedFrame="YES" rotateEnabled="NO" pitchEnabled="NO" pitchButtonVisibility="adaptive" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-S3-pLR">
-                                <rect key="frame" x="124" y="29" width="581" height="428"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <mapView rotateEnabled="NO" pitchEnabled="NO" pitchButtonVisibility="adaptive" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-S3-pLR">
+                                <rect key="frame" x="20" y="39" width="703" height="422"/>
                                 <imageryMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="332-uQ-Rv8">
+                                <rect key="frame" x="18" y="469" width="75" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label Map2" id="2Mv-7s-ZYu">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bBo-dD-a3o">
+                                <rect key="frame" x="18" y="20" width="105" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="LabelMapLatLon" id="Er6-PZ-ORc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="lblMapLatLonClick:" target="XfG-lQ-9wD" id="Fok-ms-iPV"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ojz-dz-JvB">
+                                <rect key="frame" x="327" y="20" width="89" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="LabelLocation" id="Rzh-pf-y2Z">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lw7-3o-GV7">
+                                <rect key="frame" x="612" y="9" width="118" height="32"/>
+                                <buttonCell key="cell" type="push" title="Zoom Extents" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G4P-sF-MDJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="btnZoomExtentsClick:" target="XfG-lQ-9wD" id="CG8-ky-O9t"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="de4-aW-6nn">
+                                <rect key="frame" x="556" y="19" width="55" height="18"/>
+                                <buttonCell key="cell" type="check" title="Auto" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="oH7-XZ-SFx">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="chkAutoZoomClick:" target="XfG-lQ-9wD" id="zUX-Qg-7bx"/>
+                                </connections>
+                            </button>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qA5-Fx-xc5">
+                                <rect key="frame" x="317" y="464" width="110" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="1gj-OY-3NU">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Map" width="51"/>
+                                        <segment label="Flyover" width="50" selected="YES" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="segmentedMapTypeChange:" target="XfG-lQ-9wD" id="jZJ-Se-i3a"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="332-uQ-Rv8" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="4MI-6Q-xdJ"/>
+                            <constraint firstItem="eAW-S3-pLR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="72V-i1-aPE"/>
+                            <constraint firstAttribute="bottom" secondItem="bBo-dD-a3o" secondAttribute="bottom" constant="20" symbolic="YES" id="7Ey-i5-XHf"/>
+                            <constraint firstAttribute="bottom" secondItem="ojz-dz-JvB" secondAttribute="bottom" constant="20" symbolic="YES" id="91i-op-sUf"/>
+                            <constraint firstItem="de4-aW-6nn" firstAttribute="top" secondItem="eAW-S3-pLR" secondAttribute="bottom" constant="3" id="9vB-DU-kLz"/>
+                            <constraint firstItem="bBo-dD-a3o" firstAttribute="top" secondItem="eAW-S3-pLR" secondAttribute="bottom" constant="3" id="A8x-aB-hk4"/>
+                            <constraint firstItem="bBo-dD-a3o" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="H9f-8z-1fM"/>
+                            <constraint firstItem="eAW-S3-pLR" firstAttribute="leading" secondItem="332-uQ-Rv8" secondAttribute="leading" id="MnN-j9-Urz"/>
+                            <constraint firstItem="Lw7-3o-GV7" firstAttribute="top" secondItem="eAW-S3-pLR" secondAttribute="bottom" constant="3" id="OFH-Wb-E7b"/>
+                            <constraint firstItem="Lw7-3o-GV7" firstAttribute="leading" secondItem="de4-aW-6nn" secondAttribute="trailing" constant="8" id="T8A-40-1I5"/>
+                            <constraint firstItem="ojz-dz-JvB" firstAttribute="centerX" secondItem="eAW-S3-pLR" secondAttribute="centerX" id="VfT-xa-epF"/>
+                            <constraint firstItem="Lw7-3o-GV7" firstAttribute="trailing" secondItem="eAW-S3-pLR" secondAttribute="trailing" id="Xjb-6F-uCk"/>
+                            <constraint firstItem="eAW-S3-pLR" firstAttribute="top" secondItem="qA5-Fx-xc5" secondAttribute="bottom" constant="4" id="Y4S-le-AqF"/>
+                            <constraint firstItem="eAW-S3-pLR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bAs-ci-Sk8"/>
+                            <constraint firstItem="ojz-dz-JvB" firstAttribute="top" secondItem="eAW-S3-pLR" secondAttribute="bottom" constant="3" id="eAj-2j-mff"/>
+                            <constraint firstItem="ojz-dz-JvB" firstAttribute="top" secondItem="eAW-S3-pLR" secondAttribute="bottom" constant="3" id="feW-1k-e9O"/>
+                            <constraint firstItem="qA5-Fx-xc5" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="jrU-HS-JT4"/>
+                            <constraint firstAttribute="trailing" secondItem="eAW-S3-pLR" secondAttribute="trailing" constant="20" symbolic="YES" id="lmT-sL-t1y"/>
+                            <constraint firstItem="332-uQ-Rv8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="uqy-n3-Dua"/>
+                            <constraint firstItem="eAW-S3-pLR" firstAttribute="top" secondItem="332-uQ-Rv8" secondAttribute="bottom" constant="8" id="vRB-kr-jrs"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnZoomExtents" destination="Lw7-3o-GV7" id="fpU-gR-pq3"/>
+                        <outlet property="btnsegMapType" destination="qA5-Fx-xc5" id="cEd-OO-AKQ"/>
+                        <outlet property="chkAutoZoom" destination="de4-aW-6nn" id="86K-RW-HeV"/>
+                        <outlet property="lblLocation" destination="ojz-dz-JvB" id="JUi-HJ-W7s"/>
+                        <outlet property="lblMap2" destination="332-uQ-Rv8" id="uTc-Mu-VUF"/>
+                        <outlet property="lblMapLatLon" destination="bBo-dD-a3o" id="McB-NZ-kBA"/>
                         <outlet property="mapView" destination="eAW-S3-pLR" id="2cS-PC-MRf"/>
                     </connections>
                 </viewController>

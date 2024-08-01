@@ -27,29 +27,14 @@ class ViewController: NSViewController, NSWindowDelegate {
     var trkLog = TrkLog()
 
    @IBOutlet weak var lblLocation:     NSTextField!
-    @IBOutlet weak var txtFilter:       NSTextField!
-    @IBOutlet weak var lblFilterResult: NSTextField!
     @IBOutlet weak var statusBarMap:    NSTextField!
     @IBOutlet weak var statusBar2:      NSTextField!
     @IBOutlet weak var statusBar3:      NSTextField!
 
-    @IBOutlet weak var popupDates:      NSPopUpButton!
-    @IBOutlet weak var txtDates:        NSTextField!
-    @IBOutlet weak var btnNextDate:     NSButton!
-    @IBOutlet weak var btnPrevDate:     NSButton!
-
-    @IBOutlet weak var popupSegs:       NSPopUpButton!
-    @IBOutlet weak var txtSegs:         NSTextField!
-    @IBOutlet weak var btnNextSeg:      NSButton!
-    @IBOutlet weak var btnPrevSeg:      NSButton!
-    @IBOutlet weak var btnAnimate:      NSButton!
-    @IBOutlet weak var btnClear:        NSButton!
 
     @IBOutlet weak var popupCopy:       NSPopUpButton!
 
     @IBOutlet weak var chkAutoZoom:     NSButton!
-    @IBOutlet weak var btnPrevTrkPt:    NSButton!
-    @IBOutlet weak var btnNextTrkPt:    NSButton!
     @IBOutlet weak var btnZoomExtents:  NSButton!
     @IBOutlet weak var btnsegMapType:   NSSegmentedControl!
     @IBOutlet weak var progressInd1:    NSProgressIndicator!
@@ -85,7 +70,7 @@ class ViewController: NSViewController, NSWindowDelegate {
 
         for metar in metars.all {
             if metar.flightCat != "VFR" && metar.flightCat != "MVFR" && metar.flightCat != "IFR" && metar.flightCat != "LIFR" {
-                print("🤬 \(metar.ID) \(metar.flightCat) \(metar.rawData)")
+                //print("🤬 \(metar.ID) \(metar.flightCat) \(metar.rawData)")
             }
         }
     }//viewDidLoad
@@ -94,11 +79,98 @@ class ViewController: NSViewController, NSWindowDelegate {
         URLSession.shared.downloadTask(with: url)
     }
 
-    override var representedObject: Any? {
+
+    override func viewDidAppear() {
+        view.window?.delegate = self    // Allow windowDidResize func
+        MyLog.showUnitTest(str: "VC#\(#line) viewDidAppear")
+
+        //------------------------ Read-in User Waypoint file -------------------------
+        readUserWaypoints(isReread: false)
+
+        setupMap()            // Do Setup for mapView MK MapKit
+
+        // Monitor the "AvDataG" folder for changes
+//        let directoryMonitor = DirectoryMonitor(url: myURL.avDataG)
+//        directoryMonitor.delegate = self
+//        directoryMonitor.startMonitoring()
+
+    }//end func viewDidAppear
+
+
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        print("😔 VC#\(#line) windowShouldClose")
+        let reply = MsgBoxs.okCancel("Closing the main window will terminate the app.")
+        if reply == MsgBoxs.Response.ok { return true }
+        return false
+    }
+
+    func windowWillClose(_ notification: Notification) {
+        print("😔 VC#\(#line) windowWillClose: Main window closing. Exit Garmitrk")
+        exit(0)
+    }
+
+override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
+
+
+
+    private func readUserWaypoints(isReread: Bool) {
+
+        // Reset mapView.Annotations & userWaypoints
+        mapView.removeAnnotations(userWaypoints.waypointAnnotations)  // remove any previous WAYPOINT annotations
+        userWaypoints = UserWaypoints()
+
+        do {
+            userWaypoints = try UserWaypoints(fileURL: myURL.userWaypoints)
+        } catch let msg as String {
+            userWaypoints.errMsgs = [msg]
+            print(msg)
+        } catch {
+            let msg = "⛔️ VC\(#line) Unknown Error from UserWaypoints.init"
+            userWaypoints.errMsgs = [msg]
+            print(msg)
+        }
+
+        if userWaypoints.errorCount > 0 {
+            let msg = userWaypoints.errMsgs
+            print(msg)
+        }
+
+        mapView.addAnnotations(userWaypoints.waypointAnnotations)
+
+        let hasError = !userWaypoints.errMsgs.isEmpty
+        let msg1 = "\(userWaypoints.count) User Waypoints read in from \(userWaypoints.fileName)."
+        print("\(Gb.formatIntComma(number: userWaypoints.count, fieldLen: 6)) User Waypoints read in from \(userWaypoints.fileName)")
+        if hasError {
+            print("\n         with the following errors:")
+        } else {
+            print(" with no errors")
+        }
+        for msg in userWaypoints.errMsgs {
+            print(msg)
+            //markError(errName: "", msg)
+        }
+//        statusBar2.stringValue   = " \(userWaypoints.count) User Waypoints"
+
+        let title: String
+        if !hasError {
+            print("😃 VC#\(#line) \(msg1)")
+            title = "\(userWaypoints.fileName) has changed"
+        } else {
+            title = "Error Alert"
+        }
+        var msg2 = ""
+        if userWaypoints.errorCount > 0 {
+            msg2 = "\n⛔️ \(userWaypoints.errorCount) error(s)"
+        }
+        if isReread {//}|| !userWaypoints.errMsgs.isEmpty {
+            Gb.alert("\(msg1)\(msg2)", title: title)
+        }
+        return
+    }//readUserWaypoints
 
 
     //MARK: - =-=-=-=-=-=-= Graphics for MKMapView mapView =-=-=-=-=-=-=-=

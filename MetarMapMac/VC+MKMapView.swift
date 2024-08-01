@@ -87,6 +87,11 @@ extension ViewController: MKMapViewDelegate {
         }
     }
 
+    @IBAction func segmentedMapTypeChange(_ sender: Any) {
+        if btnsegMapType.selectedSegment == 0 { mapView.mapType = .standard}
+        if btnsegMapType.selectedSegment == 1 { mapView.mapType = .hybridFlyover}
+    }
+
 
 
     @IBAction func popupCopyChange(_ sender: NSPopUpButton) {
@@ -450,11 +455,6 @@ extension ViewController: MKMapViewDelegate {
     }//end func showTrkPt
 */
 
-    // Hide or Show Prev/Next for TrackPoints
-    func hideTrkPt(_ hide: Bool) {
-        btnNextTrkPt.isHidden = hide
-        btnPrevTrkPt.isHidden = hide
-    }
 
     //MARK: - Mouse Overrides
 
@@ -532,14 +532,13 @@ extension ViewController: MKMapViewDelegate {
 //            let trkLogPasteStr = Gfunc.clipboardLatLon(lat: lat, lon: lon, isDegMin: isDegMin, trkLog: trkLog)
             let userWpPasteStr =  "\(String(format: "%7.4f", lat)) ,\(String(format: "%8.4f", abs(lon)))"
 
-            //popupCopy.title = "Click to Copy:" + pasteStr
-            popupCopy.removeAllItems()
-            popupCopy.addItem(withTitle: "Select to Copy Lat/lon (\(labelLL))")
-            popupCopy.addItem(withTitle: "Generic:   " + genericPasteStr)
-            popupCopy.addItem(withTitle: "UserWaypt: " + userWpPasteStr)
+//            //popupCopy.title = "Click to Copy:" + pasteStr
+//            popupCopy.removeAllItems()
+//            popupCopy.addItem(withTitle: "Select to Copy Lat/lon (\(labelLL))")
+//            popupCopy.addItem(withTitle: "Generic:   " + genericPasteStr)
+//            popupCopy.addItem(withTitle: "UserWaypt: " + userWpPasteStr)
 //            popupCopy.addItem(withTitle: "trkLog:    " + trkLogPasteStr)
-            popupCopy.isHidden = false
-            hideTrkPt(true)
+//            popupCopy.isHidden = false
         }//endif idxClosestTrkPt < 0
 
         // Get closest *WayPoint*
