@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2980A02C5BC457002DA1EB /* UserWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29809F2C5BC457002DA1EB /* UserWaypoint.swift */; };
+		CE2980A22C5BC491002DA1EB /* TrkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2980A12C5BC491002DA1EB /* TrkLog.swift */; };
+		CE2980A42C5BC645002DA1EB /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2980A32C5BC645002DA1EB /* FileHandler.swift */; };
+		CE2980A62C5BC8B0002DA1EB /* TrkPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2980A52C5BC8B0002DA1EB /* TrkPoint.swift */; };
+		CE2980A82C5BC96F002DA1EB /* MsgBoxs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2980A72C5BC96F002DA1EB /* MsgBoxs.swift */; };
+		CE3C70A02C5B38D0008A64F0 /* Gb.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C709F2C5B38D0008A64F0 /* Gb.swift */; };
+		CE3C70A22C5B3AC7008A64F0 /* GarmitrkCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C70A12C5B3AC7008A64F0 /* GarmitrkCommon.swift */; };
+		CE3C70A42C5B3AF9008A64F0 /* GbDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C70A32C5B3AF8008A64F0 /* GbDate.swift */; };
 		CEBE00CA2C5B276A002B091B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00C92C5B276A002B091B /* AppDelegate.swift */; };
 		CEBE00CC2C5B276A002B091B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00CB2C5B276A002B091B /* ViewController.swift */; };
 		CEBE00CE2C5B276B002B091B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBE00CD2C5B276B002B091B /* Assets.xcassets */; };
@@ -14,6 +22,15 @@
 		CEBE00DC2C5B276B002B091B /* MetarMapMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00DB2C5B276B002B091B /* MetarMapMacTests.swift */; };
 		CEBE00E62C5B276B002B091B /* MetarMapMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00E52C5B276B002B091B /* MetarMapMacUITests.swift */; };
 		CEBE00E82C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00E72C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift */; };
+		CEBE00F52C5B2839002B091B /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00F42C5B2839002B091B /* Airport.swift */; };
+		CEBE00F72C5B286B002B091B /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00F62C5B286B002B091B /* Airports.swift */; };
+		CEBE00F92C5B287E002B091B /* Metar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00F82C5B287E002B091B /* Metar.swift */; };
+		CEBE00FB2C5B288C002B091B /* Metars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00FA2C5B288C002B091B /* Metars.swift */; };
+		CEBE00FD2C5B28D6002B091B /* OtherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00FC2C5B28D6002B091B /* OtherExtensions.swift */; };
+		CEBE00FF2C5B28E5002B091B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE00FE2C5B28E5002B091B /* StringExtension.swift */; };
+		CEBE01012C5B28F3002B091B /* StringFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE01002C5B28F3002B091B /* StringFuncs.swift */; };
+		CEBE01032C5B2CEE002B091B /* NSImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE01022C5B2CEE002B091B /* NSImage+.swift */; };
+		CEBE01052C5B3229002B091B /* VC+MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE01042C5B3229002B091B /* VC+MKMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE29809F2C5BC457002DA1EB /* UserWaypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWaypoint.swift; sourceTree = "<group>"; };
+		CE2980A12C5BC491002DA1EB /* TrkLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrkLog.swift; sourceTree = "<group>"; };
+		CE2980A32C5BC645002DA1EB /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		CE2980A52C5BC8B0002DA1EB /* TrkPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrkPoint.swift; sourceTree = "<group>"; };
+		CE2980A72C5BC96F002DA1EB /* MsgBoxs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgBoxs.swift; sourceTree = "<group>"; };
+		CE3C709F2C5B38D0008A64F0 /* Gb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gb.swift; sourceTree = "<group>"; };
+		CE3C70A12C5B3AC7008A64F0 /* GarmitrkCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarmitrkCommon.swift; sourceTree = "<group>"; };
+		CE3C70A32C5B3AF8008A64F0 /* GbDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GbDate.swift; sourceTree = "<group>"; };
 		CEBE00C62C5B276A002B091B /* MetarMapMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetarMapMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBE00C92C5B276A002B091B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBE00CB2C5B276A002B091B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +70,15 @@
 		CEBE00E12C5B276B002B091B /* MetarMapMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetarMapMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBE00E52C5B276B002B091B /* MetarMapMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarMapMacUITests.swift; sourceTree = "<group>"; };
 		CEBE00E72C5B276B002B091B /* MetarMapMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetarMapMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEBE00F42C5B2839002B091B /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		CEBE00F62C5B286B002B091B /* Airports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
+		CEBE00F82C5B287E002B091B /* Metar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metar.swift; sourceTree = "<group>"; };
+		CEBE00FA2C5B288C002B091B /* Metars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metars.swift; sourceTree = "<group>"; };
+		CEBE00FC2C5B28D6002B091B /* OtherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExtensions.swift; sourceTree = "<group>"; };
+		CEBE00FE2C5B28E5002B091B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CEBE01002C5B28F3002B091B /* StringFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFuncs.swift; sourceTree = "<group>"; };
+		CEBE01022C5B2CEE002B091B /* NSImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+.swift"; sourceTree = "<group>"; };
+		CEBE01042C5B3229002B091B /* VC+MKMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+MKMapView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +131,23 @@
 			children = (
 				CEBE00C92C5B276A002B091B /* AppDelegate.swift */,
 				CEBE00CB2C5B276A002B091B /* ViewController.swift */,
+				CEBE01042C5B3229002B091B /* VC+MKMapView.swift */,
+				CEBE00F42C5B2839002B091B /* Airport.swift */,
+				CEBE00F62C5B286B002B091B /* Airports.swift */,
+				CE2980A32C5BC645002DA1EB /* FileHandler.swift */,
+				CE3C70A12C5B3AC7008A64F0 /* GarmitrkCommon.swift */,
+				CE3C709F2C5B38D0008A64F0 /* Gb.swift */,
+				CE3C70A32C5B3AF8008A64F0 /* GbDate.swift */,
+				CE2980A72C5BC96F002DA1EB /* MsgBoxs.swift */,
+				CEBE00F82C5B287E002B091B /* Metar.swift */,
+				CEBE00FA2C5B288C002B091B /* Metars.swift */,
+				CEBE01022C5B2CEE002B091B /* NSImage+.swift */,
+				CEBE00FC2C5B28D6002B091B /* OtherExtensions.swift */,
+				CEBE00FE2C5B28E5002B091B /* StringExtension.swift */,
+				CEBE01002C5B28F3002B091B /* StringFuncs.swift */,
+				CE2980A12C5BC491002DA1EB /* TrkLog.swift */,
+				CE2980A52C5BC8B0002DA1EB /* TrkPoint.swift */,
+				CE29809F2C5BC457002DA1EB /* UserWaypoint.swift */,
 				CEBE00CD2C5B276B002B091B /* Assets.xcassets */,
 				CEBE00CF2C5B276B002B091B /* Main.storyboard */,
 				CEBE00D22C5B276B002B091B /* MetarMapMac.entitlements */,
@@ -251,8 +302,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBE01032C5B2CEE002B091B /* NSImage+.swift in Sources */,
+				CEBE00F52C5B2839002B091B /* Airport.swift in Sources */,
+				CEBE01052C5B3229002B091B /* VC+MKMapView.swift in Sources */,
+				CEBE01012C5B28F3002B091B /* StringFuncs.swift in Sources */,
+				CE2980A62C5BC8B0002DA1EB /* TrkPoint.swift in Sources */,
+				CEBE00F72C5B286B002B091B /* Airports.swift in Sources */,
 				CEBE00CC2C5B276A002B091B /* ViewController.swift in Sources */,
+				CEBE00F92C5B287E002B091B /* Metar.swift in Sources */,
+				CEBE00FF2C5B28E5002B091B /* StringExtension.swift in Sources */,
+				CE3C70A02C5B38D0008A64F0 /* Gb.swift in Sources */,
+				CE2980A02C5BC457002DA1EB /* UserWaypoint.swift in Sources */,
+				CE2980A22C5BC491002DA1EB /* TrkLog.swift in Sources */,
 				CEBE00CA2C5B276A002B091B /* AppDelegate.swift in Sources */,
+				CE3C70A42C5B3AF9008A64F0 /* GbDate.swift in Sources */,
+				CEBE00FD2C5B28D6002B091B /* OtherExtensions.swift in Sources */,
+				CE2980A82C5BC96F002DA1EB /* MsgBoxs.swift in Sources */,
+				CE3C70A22C5B3AC7008A64F0 /* GarmitrkCommon.swift in Sources */,
+				CE2980A42C5BC645002DA1EB /* FileHandler.swift in Sources */,
+				CEBE00FB2C5B288C002B091B /* Metars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
