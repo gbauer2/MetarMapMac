@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import MapKit
 
-struct Metar {
-    let rawData:    String
+class Metar: NSObject, MKAnnotation  {
     let ID:         String
+    //let annotation: MetarAnnotation
+    let rawData:    String
     //let date:       Date
     let lat:        Double
     let lon:        Double
@@ -22,6 +24,11 @@ struct Metar {
     var altim:      Double = 0
 
     var flightCat:  String = ""
+
+    public var title:      String?
+    public var subtitle:   String?
+    public var coordinate: CLLocationCoordinate2D
+    public var image:       NSImage
 
     var errMsg      = ""
 
@@ -76,22 +83,20 @@ struct Metar {
  42 metar_type,
  43 elevation_m
  */
-    init(csvStr: String){
+    init?(csvStr: String){
         let items = csvStr.components(separatedBy: ",")
         let itemCount = items.count
-        if itemCount < 44 {
-            errMsg = "Metar#\(#line) Only \(itemCount) items in METAR"
-        }
-        rawData = items[0]
         if itemCount < 5 {
             errMsg = "Metar#\(#line) Only \(itemCount) items in METAR"
-            ID = "????"
-            lat = -999
-            lon = -999
-            return
+            return nil
         }
-
+        rawData = items[0]
         ID      = items[1]
+        guard let latIn = Double(items[3]) else { return nil }
+        guard let lonIn = Double(items[4]) else { return nil }
+        if latIn < 20 || latIn > 66 || lonIn > -70 || lonIn < -130 { return nil }
+        title = items[1]
+        coordinate = CLLocationCoordinate2D(latitude: latIn, longitude: lonIn)
         lat     = Double(items[3]) ?? -999
         lon     = Double(items[4]) ?? -999
 
@@ -105,6 +110,31 @@ struct Metar {
         altim   = Double(items[11]) ?? -999
 
         flightCat   = items[30]
+
+        image = NSImage(systemSymbolName: "star.circle", accessibilityDescription: nil)!
+//        image = NSImage(systemName: "star.circle")
+
     }//init
 
-}//Metar
+}//struct Metar
+
+
+
+
+/*
+//MARK: - class MetarAnnotation
+public class MetarAnnotation: NSObject, MKAnnotation {
+    public var title:      String?
+    public var subtitle:   String?
+    public var coordinate: CLLocationCoordinate2D
+    public var image:       NSImage
+
+    init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D, image: NSImage) {
+        self.title      = title
+        self.subtitle   = subtitle
+        self.coordinate = coordinate
+        self.image      = image
+    }//end init
+}//end class MetarAnnotation
+ */
+

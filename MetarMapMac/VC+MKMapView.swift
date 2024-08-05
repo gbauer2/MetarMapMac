@@ -58,7 +58,7 @@ extension ViewController: MKMapViewDelegate {
         resetExtents()
         displayLatLon(lat: mapCenterLat, lon: mapCenterLon)
 
-        mapView.addAnnotations(userWaypoints.waypointAnnotations)
+        //mapView.addAnnotations(userWaypoints.waypointAnnotations)
         drawMap(lat: mapCenterLat, lon: mapCenterLon, latDelt: mapDeltaLat, lonDelt: mapDeltaLon)
 
         let options: NSTrackingArea.Options = [.mouseMoved, .mouseEnteredAndExited, .activeInKeyWindow, .activeAlways, .inVisibleRect]
@@ -175,7 +175,7 @@ extension ViewController: MKMapViewDelegate {
         if gIconSize != gPrevIconSize {
             gPrevIconSize = gIconSize
             mapView.removeAnnotations(userWaypoints.waypointAnnotations)  // remove ALL previous WAYPOINT annotations
-            mapView.addAnnotations(userWaypoints.waypointAnnotations)     // then add them back with current IconSize
+            //mapView.addAnnotations(userWaypoints.waypointAnnotations)     // then add them back with current IconSize
         }
         // Display the new ZoomScale
         let z1000 = currentZoomScale*1000

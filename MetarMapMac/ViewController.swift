@@ -72,6 +72,8 @@ class ViewController: NSViewController, NSWindowDelegate {
             if metar.flightCat != "VFR" && metar.flightCat != "MVFR" && metar.flightCat != "IFR" && metar.flightCat != "LIFR" {
                 //print("🤬 \(metar.ID) \(metar.flightCat) \(metar.rawData)")
             }
+            mapView.addAnnotations(metars.all)
+
         }
     }//viewDidLoad
 
@@ -109,7 +111,7 @@ class ViewController: NSViewController, NSWindowDelegate {
         exit(0)
     }
 
-override var representedObject: Any? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
@@ -139,7 +141,7 @@ override var representedObject: Any? {
             print(msg)
         }
 
-        mapView.addAnnotations(userWaypoints.waypointAnnotations)
+        //mapView.addAnnotations(userWaypoints.waypointAnnotations)
 
         let hasError = !userWaypoints.errMsgs.isEmpty
         let msg1 = "\(userWaypoints.count) User Waypoints read in from \(userWaypoints.fileName)."
